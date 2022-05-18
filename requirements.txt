@@ -1,3 +1,5 @@
 web3==5.29.1 # API
 python-dotenv==0.20.0 # ENV variables
 pipx==1.0.0 # for "pipx install eth-brownie"
+flask==2.1.2 # app
+requests==2.27.1

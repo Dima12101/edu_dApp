@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+  ul {
+    list-style:none;
+    padding:0;
+  }
+  li {
+    margin-bottom:50px;
+  }
+</style>
+
+<div style="margin-top:30px" class="row text-center">
+    <div class="col-sm">
+      <img width="200" src="{{nfts_img['rock_url']}}" alt="Rock image">
+    </div>
+    <div class="col-sm">
+      <img width="200" src="{{nfts_img['paper_url']}}" alt="Paper image">
+    </div>
+    <div class="col-sm">
+      <img width="200" src="{{nfts_img['scissors_url']}}" alt="Scissors image">
+    </div>
+</div>
+{% endblock %}

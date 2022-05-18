@@ -7,10 +7,10 @@
 * Smart Contracts Lang: Solidity
 * Framework for smart contracts: Brownie
 * Minting NFT Standart: ERC-1155
+* IPFS: https://nft.storage/
 
-IPFS - https://nft.storage/
 
-Steps:
+Steps brownie:
 * brownie networks set_provider alchemy
 * brownie accounts new deployment_account
 * brownie run deploy.py --network rinkeby
