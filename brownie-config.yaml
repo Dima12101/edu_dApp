@@ -1,0 +1,17 @@
+dependencies:
+    - OpenZeppelin/openzeppelin-contracts@4.6.0
+compiler:
+    solc:
+        remappings:
+            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0"
+dotenv: .env
+networks:
+    default: rinkeby
+    rinkeby:
+        gas_limit: max
+        verify: false
+reports:
+    exclude_contracts:
+        - SafeMath
+wallets:
+    from_key: ${ACCOUNT_PRIVATE_KEY}
