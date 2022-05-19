@@ -42,3 +42,8 @@ Assignment for the course "Ecosystem of distributed registries"
 2. Next you can minting the NFT tokens. Remember the rules:
    * You can have only 1 token of the same type
    * You cannot take a token that is defeated by the token you have
+
+## Demo
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/9nxmuc5Rorg/0.jpg)](https://www.youtube.com/watch?v=9nxmuc5Rorg)
+
