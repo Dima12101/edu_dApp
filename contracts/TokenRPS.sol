@@ -23,22 +23,22 @@ contract TokenRPS is ERC1155 {
     //If this of your first Rock and you do not have any Paper the contract will let you buy one
     function mintRock() public{
         require(balanceOf(msg.sender,Rock) == 0,"you already have a Rock ");
-        require(balanceOf(msg.sender,Paper) > 0,"you have a Paper, stop!");
+        require(balanceOf(msg.sender,Paper) == 0,"you have a Paper, stop!");
         _mint(msg.sender,Rock,1,"0x000");
     }
     
     //If this of your first Paper and you do not have any Scissors the contract will let you buy one
     function mintPaper() public{
         require(balanceOf(msg.sender,Paper) == 0,"you already have a Paper ");
-        require(balanceOf(msg.sender,Scissors) > 0,"you have a Scissors, stop!");
+        require(balanceOf(msg.sender,Scissors) == 0,"you have a Scissors, stop!");
         _mint(msg.sender,Paper,1,"0x000");
     }
 
     //If this of your first Scissors and you do not have any Rock the contract will let you buy one
     function mintScissors() public{
         require(balanceOf(msg.sender,Scissors) == 0,"you already have a Scissors ");
-        require(balanceOf(msg.sender,Rock) > 0,"you have a Rock, stop!");
-        _mint(msg.sender,Paper,1,"0x000");
+        require(balanceOf(msg.sender,Rock) == 0,"you have a Rock, stop!");
+        _mint(msg.sender,Scissors,1,"0x000");
     }
     
 }
