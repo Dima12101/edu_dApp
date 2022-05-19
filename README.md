@@ -17,7 +17,7 @@ Assignment for the course "Ecosystem of distributed registries"
 | Front API with wallet | MetaMask API |
 
 ## Architecture
-![draw.io arch of app](./img/edu_dApp.drawio.png)
+![draw.io arch of app](./img/edu_dApp.png)
 ## SetUp steps
 1. Configure Enviroment
    * Create virtual enviroment: `python -m venv venv`
