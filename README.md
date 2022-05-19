@@ -22,13 +22,13 @@ Assignment for the course "Ecosystem of distributed registries"
 1. Configure Enviroment
    * Create virtual enviroment: `python -m venv venv`
    * Connect to venv: `source venv/bin/activate`
-   * Intsall dependecies: `pip install -r requirements.txt & pipx install eth-brownie`
+   * Install dependecies: `pip install -r requirements.txt & pipx install eth-brownie`
 2. Set env variables:
-   * Create .env file: `cp schama.env .env`
+   * Create .env file: `cp schema.env .env`
    * Fill file:
        * `WEB3_ALCHEMY_PROJECT_ID` - ID of dApp prject in https://dashboard.alchemyapi.io/apps
        * `ACCOUNT_ADDRESS` & `ACCOUNT_PRIVATE_KEY` - cred of main account
-       * `CONTRACT_ADDRESS` - fiil after deploy
+       * `CONTRACT_ADDRESS` - fill after deploy
 3. Conf Brownie:
    * Change Ethereum Provider API: `brownie networks set_provider alchemy`
    * Add main account: `brownie accounts new deployment_account`

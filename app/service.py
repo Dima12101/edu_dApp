@@ -34,7 +34,7 @@ def create_tr_mint_nft(from_address, name):
         # error_message = dumps({'Message':  str(err)})
         abort(Response(str(err), 400))
     
-    tr['value'] = w3.toHex(w3.toWei(0.001, 'ether')) 
+    # tr['value'] = w3.toHex(w3.toWei(0.0001, 'ether')) # TODO
     tr['gas'] = w3.toHex(tr['gas'])
     tr['maxFeePerGas'] = w3.toHex(tr['maxFeePerGas'])
     tr['maxPriorityFeePerGas'] = w3.toHex(tr['maxPriorityFeePerGas'])
